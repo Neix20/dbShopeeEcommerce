@@ -14,7 +14,7 @@ namespace dbShopeeEcommerce {
             routes.MapRoute(
                 name: "Default", // Route name
                 url: "{controller}/{action}/{id}", // URL with parameters
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional } // Parameter defaults
+                defaults: new { controller = "ReadFile", action = "Index", id = UrlParameter.Optional } // Parameter defaults
             );
         }
     }

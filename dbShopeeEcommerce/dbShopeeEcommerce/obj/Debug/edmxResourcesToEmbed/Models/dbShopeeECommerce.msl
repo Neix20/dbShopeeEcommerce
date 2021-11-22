@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="dbShopeeEcommerceModelStoreContainer" CdmEntityContainer="dbShopeeEcommerceEntities">
+    <EntitySetMapping Name="TShopeeCustomers">
+      <EntityTypeMapping TypeName="dbShopeeEcommerceModel.TShopeeCustomer">
+        <MappingFragment StoreEntitySet="TShopeeCustomer">
+          <ScalarProperty Name="customer_id" ColumnName="customer_id" />
+          <ScalarProperty Name="first_name" ColumnName="first_name" />
+          <ScalarProperty Name="last_name" ColumnName="last_name" />
+          <ScalarProperty Name="dob" ColumnName="dob" />
+          <ScalarProperty Name="email_address" ColumnName="email_address" />
+          <ScalarProperty Name="phone_number" ColumnName="phone_number" />
+          <ScalarProperty Name="address_line_1" ColumnName="address_line_1" />
+          <ScalarProperty Name="address_line_2" ColumnName="address_line_2" />
+          <ScalarProperty Name="city" ColumnName="city" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="zip_code" ColumnName="zip_code" />
+          <ScalarProperty Name="country" ColumnName="country" />
+          <ScalarProperty Name="platform_id" ColumnName="platform_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TShopeeInvoices">
+      <EntityTypeMapping TypeName="dbShopeeEcommerceModel.TShopeeInvoice">
+        <MappingFragment StoreEntitySet="TShopeeInvoice">
+          <ScalarProperty Name="invoice_id" ColumnName="invoice_id" />
+          <ScalarProperty Name="invoice_date" ColumnName="invoice_date" />
+          <ScalarProperty Name="invoice_details" ColumnName="invoice_details" />
+          <ScalarProperty Name="shipping_fee" ColumnName="shipping_fee" />
+          <ScalarProperty Name="payment_method_id" ColumnName="payment_method_id" />
+          <ScalarProperty Name="invoice_status_id" ColumnName="invoice_status_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TShopeeInvoiceStatus">
+      <EntityTypeMapping TypeName="dbShopeeEcommerceModel.TShopeeInvoiceStatu">
+        <MappingFragment StoreEntitySet="TShopeeInvoiceStatus">
+          <ScalarProperty Name="invoice_status_id" ColumnName="invoice_status_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="description" ColumnName="description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TShopeeOrders">
+      <EntityTypeMapping TypeName="dbShopeeEcommerceModel.TShopeeOrder">
+        <MappingFragment StoreEntitySet="TShopeeOrder">
+          <ScalarProperty Name="order_id" ColumnName="order_id" />
+          <ScalarProperty Name="order_placed_date" ColumnName="order_placed_date" />
+          <ScalarProperty Name="total_price" ColumnName="total_price" />
+          <ScalarProperty Name="order_status_id" ColumnName="order_status_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TShopeeOrderItems">
+      <EntityTypeMapping TypeName="dbShopeeEcommerceModel.TShopeeOrderItem">
+        <MappingFragment StoreEntitySet="TShopeeOrderItem">
+          <ScalarProperty Name="order_item_id" ColumnName="order_item_id" />
+          <ScalarProperty Name="quantity" ColumnName="quantity" />
+          <ScalarProperty Name="sub_total" ColumnName="sub_total" />
+          <ScalarProperty Name="discount_fee" ColumnName="discount_fee" />
+          <ScalarProperty Name="RMA_num" ColumnName="RMA_num" />
+          <ScalarProperty Name="RMA_issued_by" ColumnName="RMA_issued_by" />
+          <ScalarProperty Name="RMA_issued_date" ColumnName="RMA_issued_date" />
+          <ScalarProperty Name="order_id" ColumnName="order_id" />
+          <ScalarProperty Name="order_item_status_id" ColumnName="order_item_status_id" />
+          <ScalarProperty Name="product_id" ColumnName="product_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TShopeeOrderItemStatus">
+      <EntityTypeMapping TypeName="dbShopeeEcommerceModel.TShopeeOrderItemStatu">
+        <MappingFragment StoreEntitySet="TShopeeOrderItemStatus">
+          <ScalarProperty Name="order_item_status_id" ColumnName="order_item_status_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="return_merchandise_authorization_nr" ColumnName="return_merchandise_authorization_nr" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TShopeeOrderStatus">
+      <EntityTypeMapping TypeName="dbShopeeEcommerceModel.TShopeeOrderStatu">
+        <MappingFragment StoreEntitySet="TShopeeOrderStatus">
+          <ScalarProperty Name="order_status_id" ColumnName="order_status_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TShopeePaymentMethods">
+      <EntityTypeMapping TypeName="dbShopeeEcommerceModel.TShopeePaymentMethod">
+        <MappingFragment StoreEntitySet="TShopeePaymentMethod">
+          <ScalarProperty Name="payment_method_id" ColumnName="payment_method_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TShopeePlatforms">
+      <EntityTypeMapping TypeName="dbShopeeEcommerceModel.TShopeePlatform">
+        <MappingFragment StoreEntitySet="TShopeePlatform">
+          <ScalarProperty Name="platform_id" ColumnName="platform_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="NSP_TShopeeCustomer_Delete" FunctionName="dbShopeeEcommerceModel.Store.NSP_TShopeeCustomer_Delete" />
+    <FunctionImportMapping FunctionImportName="NSP_TShopeeCustomer_Insert" FunctionName="dbShopeeEcommerceModel.Store.NSP_TShopeeCustomer_Insert" />
+    <FunctionImportMapping FunctionImportName="NSP_TShopeeCustomer_Update" FunctionName="dbShopeeEcommerceModel.Store.NSP_TShopeeCustomer_Update" />
+    <FunctionImportMapping FunctionImportName="NSP_TShopeeInvoice_Delete" FunctionName="dbShopeeEcommerceModel.Store.NSP_TShopeeInvoice_Delete" />
+    <FunctionImportMapping FunctionImportName="NSP_TShopeeInvoice_Insert" FunctionName="dbShopeeEcommerceModel.Store.NSP_TShopeeInvoice_Insert" />
+    <FunctionImportMapping FunctionImportName="NSP_TShopeeInvoice_Update" FunctionName="dbShopeeEcommerceModel.Store.NSP_TShopeeInvoice_Update" />
+    <FunctionImportMapping FunctionImportName="NSP_TShopeeInvoiceStatus_Delete" FunctionName="dbShopeeEcommerceModel.Store.NSP_TShopeeInvoiceStatus_Delete" />
+    <FunctionImportMapping FunctionImportName="NSP_TShopeeInvoiceStatus_Insert" FunctionName="dbShopeeEcommerceModel.Store.NSP_TShopeeInvoiceStatus_Insert" />
+    <FunctionImportMapping FunctionImportName="NSP_TShopeeInvoiceStatus_Update" FunctionName="dbShopeeEcommerceModel.Store.NSP_TShopeeInvoiceStatus_Update" />
+    <FunctionImportMapping FunctionImportName="NSP_TShopeeOrder_Delete" FunctionName="dbShopeeEcommerceModel.Store.NSP_TShopeeOrder_Delete" />
+    <FunctionImportMapping FunctionImportName="NSP_TShopeeOrder_Insert" FunctionName="dbShopeeEcommerceModel.Store.NSP_TShopeeOrder_Insert" />
+    <FunctionImportMapping FunctionImportName="NSP_TShopeeOrder_Update" FunctionName="dbShopeeEcommerceModel.Store.NSP_TShopeeOrder_Update" />
+    <FunctionImportMapping FunctionImportName="NSP_TShopeeOrderItem_Delete" FunctionName="dbShopeeEcommerceModel.Store.NSP_TShopeeOrderItem_Delete" />
+    <FunctionImportMapping FunctionImportName="NSP_TShopeeOrderItem_Insert" FunctionName="dbShopeeEcommerceModel.Store.NSP_TShopeeOrderItem_Insert" />
+    <FunctionImportMapping FunctionImportName="NSP_TShopeeOrderItem_Update" FunctionName="dbShopeeEcommerceModel.Store.NSP_TShopeeOrderItem_Update" />
+    <FunctionImportMapping FunctionImportName="NSP_TShopeeOrderItemStatus_Delete" FunctionName="dbShopeeEcommerceModel.Store.NSP_TShopeeOrderItemStatus_Delete" />
+    <FunctionImportMapping FunctionImportName="NSP_TShopeeOrderItemStatus_Insert" FunctionName="dbShopeeEcommerceModel.Store.NSP_TShopeeOrderItemStatus_Insert" />
+    <FunctionImportMapping FunctionImportName="NSP_TShopeeOrderItemStatus_Update" FunctionName="dbShopeeEcommerceModel.Store.NSP_TShopeeOrderItemStatus_Update" />
+    <FunctionImportMapping FunctionImportName="NSP_TShopeeOrderStatus_Delete" FunctionName="dbShopeeEcommerceModel.Store.NSP_TShopeeOrderStatus_Delete" />
+    <FunctionImportMapping FunctionImportName="NSP_TShopeeOrderStatus_Insert" FunctionName="dbShopeeEcommerceModel.Store.NSP_TShopeeOrderStatus_Insert" />
+    <FunctionImportMapping FunctionImportName="NSP_TShopeeOrderStatus_Update" FunctionName="dbShopeeEcommerceModel.Store.NSP_TShopeeOrderStatus_Update" />
+    <FunctionImportMapping FunctionImportName="NSP_TShopeePaymentMethod_Delete" FunctionName="dbShopeeEcommerceModel.Store.NSP_TShopeePaymentMethod_Delete" />
+    <FunctionImportMapping FunctionImportName="NSP_TShopeePaymentMethod_Insert" FunctionName="dbShopeeEcommerceModel.Store.NSP_TShopeePaymentMethod_Insert" />
+    <FunctionImportMapping FunctionImportName="NSP_TShopeePaymentMethod_Update" FunctionName="dbShopeeEcommerceModel.Store.NSP_TShopeePaymentMethod_Update" />
+    <FunctionImportMapping FunctionImportName="NSP_TShopeePlatform_Delete" FunctionName="dbShopeeEcommerceModel.Store.NSP_TShopeePlatform_Delete" />
+    <FunctionImportMapping FunctionImportName="NSP_TShopeePlatform_Insert" FunctionName="dbShopeeEcommerceModel.Store.NSP_TShopeePlatform_Insert" />
+    <FunctionImportMapping FunctionImportName="NSP_TShopeePlatform_Update" FunctionName="dbShopeeEcommerceModel.Store.NSP_TShopeePlatform_Update" />
+  </EntityContainerMapping>
+</Mapping>

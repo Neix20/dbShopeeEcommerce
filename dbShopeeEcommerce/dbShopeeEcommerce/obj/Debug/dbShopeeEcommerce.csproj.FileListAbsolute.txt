@@ -287,3 +287,5 @@ D:\Github\dbShopeeEcommerce\dbShopeeEcommerce\dbShopeeEcommerce\bin\ru\DevExpres
 D:\Github\dbShopeeEcommerce\dbShopeeEcommerce\dbShopeeEcommerce\obj\Debug\dbShopeeEcommerce.csprojResolveAssemblyReference.cache
 D:\Github\dbShopeeEcommerce\dbShopeeEcommerce\dbShopeeEcommerce\obj\Debug\dbShopeeEcommerce.dll
 D:\Github\dbShopeeEcommerce\dbShopeeEcommerce\dbShopeeEcommerce\obj\Debug\dbShopeeEcommerce.pdb
+D:\Github\dbShopeeEcommerce\dbShopeeEcommerce\dbShopeeEcommerce\bin\IronXL.dll
+D:\Github\dbShopeeEcommerce\dbShopeeEcommerce\dbShopeeEcommerce\bin\IronXL.xml
